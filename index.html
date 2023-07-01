@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/07e9793f39.js" crossorigin="anonymous"></script>
+</head>
+       <!-- --------------------top of application including head------------------- -->
+<body>
+    <!-- heading and  main icons -->
+  <div id="whole-list-box">
+    <h1 id="heading"> TO-do List</h1>
+    <div class="list-input-plus">
+      <div class="input-icons check">
+        <i class="fa-solid fa-list-check"></i>
+      </div>
+        <!--  input field to add task -->
+      <input class="input-task" type="text" name="task" required placeholder="Add Task.." />
+      <div class="input-icons add-icon check">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+    </div>
+      <!-- containers for complete all tasks and mark all tasks -->
+    <div class="comp-clear">
+      <div class="dbl-check-comp shadow">
+        <div><i class="fa-solid fa-check-double"></i></div>
+        <h3>Complete All Tasks</h3>
+      </div>
+      <div class="trash-clear shadow">
+        <div><i class="fa-solid fa-trash"></i></div>
+        <h3>Clear All Tasks</h3>
+      </div>
+    </div>
+       <!-------------- container for adding tasks-------------------------->
+    <div class="new-task"></div>
+
+    <!---------------------------------------------- bottom sectiom--------------------------------- -->
+    <!-- container  to update how much tasks are left and removed or deleted -->
+    <div class="lft-tsks-comp-uncomp">
+      <h4 class="tasks-left-task-word">
+        <span class="tasks-left"></span> 
+        <span class="task-word"></span>
+        <span class="left-added"></span>
+      </h4>
+       <!-- container for all, completed , uncomplete tasks -->
+      <div class="all-comp-uncomp shadow">
+        <h4 class="allPresentTasks modify"><i class="fa-solid fa-square-check" style="color: #2aaf18;"></i>All</h4>
+        <h4 class="completedTasks modify"> <i class="fa-regular fa-square-check" style="color: #0c8dc0;"></i>Completed</h4>
+        <h4 class="uncompletedTasks modify"><i class="fa-regular fa-square" style="color: #f50f0f;"></i>Uncomplete</h4>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
